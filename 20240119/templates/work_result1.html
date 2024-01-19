@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .blue{
+            color: blue;
+        }
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 파이썬 탬프릿 문법 -->
+    {% if is_adult == true %}
+    <p class="blue">{{irum}} 님은 성년입니다</p>
+
+    {% else%}
+    <p class="red">{{irum}} 님은 미성년입니다</p>
+    {% endif %}
+</body>
+</html>

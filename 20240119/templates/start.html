@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        input요소 : form안에서 사용
+        type으로 모양이 달라진다
+         text, password, number, date ,file
+         
+         여러개 중에 하나 -selelct
+         name은 select에 준다
+         선택했을때 값은
+            option에 vlaue라는 속성이 없으면 글자
+
+        disabled 는 비활성화
+        selected 는 선택 되어있는 것
+        고로 두개 다 있으면 처음에는 selected 옵션이 나오지만 나중에 고를수 없는것을 의미
+     -->
+    <form action="start" method="post">
+        <select name="month">
+            <option disabled selected>월을 선택하세요</option>
+            <option value="1">1월</option>
+            <option value="2">2월</option>
+            <option value="3">3월</option>
+            <option value="4">4월</option>
+            <option value="5">5월</option>
+            <option value="6">6월</option>
+            <option value="7">7월</option>
+            <option value="8">8월</option>
+            <option value="9">9월</option>
+            <option value="10">10월</option>
+            <option value="11">11월</option>
+            <option value="12">12월</option>
+        </select>
+        <button>보내기</button>
+    </form>
+</body>
+
+</html>
