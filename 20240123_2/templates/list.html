@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>번호</th>
+                <th>제목</th>
+                <th>글쓴이</th>
+                <th>조회수</th>
+            </tr>
+    </thead>
+    <tbody>
+        {% for a in list %}
+        <tr>    
+            <td>{{a.bno}}</td>
+            <td>
+               <a href="/read?bno={{a.bno}}">{{a.title}}</a>
+            </td>
+            <td>{{a.nickname}}</td>
+            <td>{{a.readcnt}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<a href="/write">글쓰기로</a>
+</body>
+</html>
